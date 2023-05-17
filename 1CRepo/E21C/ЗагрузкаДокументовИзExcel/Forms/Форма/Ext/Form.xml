@@ -1,0 +1,1092 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Pages name="Группа12" id="169">
+			<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="170"/>
+			<ChildItems>
+				<Page name="Группа13" id="171">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основная обработка</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа13РасширеннаяПодсказка" id="172"/>
+					<ChildItems>
+						<UsualGroup name="Группа3" id="88">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="89"/>
+							<ChildItems>
+								<InputField name="ПутьExcel" id="4">
+									<DataPath>ПутьExcel</DataPath>
+									<ChoiceButton>true</ChoiceButton>
+									<ClearButton>true</ClearButton>
+									<OpenButton>true</OpenButton>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<BackColor>style:ImportantColor</BackColor>
+									<BorderColor>style:BorderColor</BorderColor>
+									<ContextMenu name="ПутьExcelКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="ПутьExcelРасширеннаяПодсказка" id="6"/>
+									<Events>
+										<Event name="OnChange">ПутьExcelПриИзменении</Event>
+										<Event name="StartChoice">ПутьExcelНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<CommandBar name="Группа4" id="90">
+									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="91"/>
+									<ChildItems>
+										<Button name="ПоказатьExcelФайл" id="86">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ПоказатьExcelФайл</CommandName>
+											<ExtendedTooltip name="ПоказатьExcelФайлРасширеннаяПодсказка" id="87"/>
+										</Button>
+									</ChildItems>
+								</CommandBar>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ТипДокумента" id="1">
+							<DataPath>Объект.ТипДокумента</DataPath>
+							<ContextMenu name="ТипДокументаКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ТипДокументаРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<UsualGroup name="Группа5" id="95">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительные функции:</v8:content>
+								</v8:item>
+							</Title>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="96"/>
+							<ChildItems>
+								<CommandBar name="Группа6" id="97">
+									<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="98"/>
+									<ChildItems>
+										<Button name="СоздатьНеНайденнуюНоменклатуру" id="99">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.СоздатьНеНайденнуюНоменклатуру</CommandName>
+											<ExtendedTooltip name="СоздатьНеНайденнуюНоменклатуруРасширеннаяПодсказка" id="100"/>
+										</Button>
+									</ChildItems>
+								</CommandBar>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа7" id="101">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="102"/>
+							<ChildItems>
+								<UsualGroup name="Группа9" id="107">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Для разработчиков:</v8:content>
+										</v8:item>
+									</Title>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="108"/>
+									<ChildItems>
+										<Button name="ЗаполнитьТестовымиДанными" id="105">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ЗаполнитьТестовымиДанными</CommandName>
+											<ExtendedTooltip name="ЗаполнитьТестовымиДаннымиРасширеннаяПодсказка" id="106"/>
+										</Button>
+										<InputField name="СкладДляРазработки" id="112">
+											<DataPath>Объект.СкладДляАвтозаполнения</DataPath>
+											<ContextMenu name="СкладДляРазработкиКонтекстноеМеню" id="113"/>
+											<ExtendedTooltip name="СкладДляРазработкиРасширеннаяПодсказка" id="114"/>
+										</InputField>
+										<Button name="ДозаполнятьНехваткуСкладов" id="115">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ДозаполнятьНехваткуСкладов</CommandName>
+											<ExtendedTooltip name="ДозаполнятьНехваткуСкладовРасширеннаяПодсказка" id="116"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<Pages name="Группа8" id="117">
+							<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="118"/>
+							<ChildItems>
+								<Page name="Группа10" id="119">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Приобретение / Реализация товаров и услуг</v8:content>
+										</v8:item>
+									</Title>
+									<Group>HorizontalIfPossible</Group>
+									<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="120"/>
+									<ChildItems>
+										<Table name="СодержимоеExcelФайла1" id="26">
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Объект.СодержимоеExcelФайла</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="СодержимоеExcelФайла1КонтекстноеМеню" id="27"/>
+											<AutoCommandBar name="СодержимоеExcelФайла1КоманднаяПанель" id="28"/>
+											<ExtendedTooltip name="СодержимоеExcelФайла1РасширеннаяПодсказка" id="29"/>
+											<SearchStringAddition name="СодержимоеExcelФайла1СтрокаПоиска" id="30">
+												<AdditionSource>
+													<Item>СодержимоеExcelФайла1</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="СодержимоеExcelФайла1СтрокаПоискаКонтекстноеМеню" id="31"/>
+												<ExtendedTooltip name="СодержимоеExcelФайла1СтрокаПоискаРасширеннаяПодсказка" id="32"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="СодержимоеExcelФайла1СостояниеПросмотра" id="33">
+												<AdditionSource>
+													<Item>СодержимоеExcelФайла1</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="СодержимоеExcelФайла1СостояниеПросмотраКонтекстноеМеню" id="34"/>
+												<ExtendedTooltip name="СодержимоеExcelФайла1СостояниеПросмотраРасширеннаяПодсказка" id="35"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="СодержимоеExcelФайла1УправлениеПоиском" id="36">
+												<AdditionSource>
+													<Item>СодержимоеExcelФайла1</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="СодержимоеExcelФайла1УправлениеПоискомКонтекстноеМеню" id="37"/>
+												<ExtendedTooltip name="СодержимоеExcelФайла1УправлениеПоискомРасширеннаяПодсказка" id="38"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<InputField name="СодержимоеExcelФайла1Дата" id="42">
+													<DataPath>Объект.СодержимоеExcelФайла.Дата</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайла1ДатаКонтекстноеМеню" id="43"/>
+													<ExtendedTooltip name="СодержимоеExcelФайла1ДатаРасширеннаяПодсказка" id="44"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайла1ВидОперации" id="45">
+													<DataPath>Объект.СодержимоеExcelФайла.ВидОперации</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайла1ВидОперацииКонтекстноеМеню" id="46"/>
+													<ExtendedTooltip name="СодержимоеExcelФайла1ВидОперацииРасширеннаяПодсказка" id="47"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайла1СуммаДокумента" id="48">
+													<DataPath>Объект.СодержимоеExcelФайла.СуммаДокумента</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайла1СуммаДокументаКонтекстноеМеню" id="49"/>
+													<ExtendedTooltip name="СодержимоеExcelФайла1СуммаДокументаРасширеннаяПодсказка" id="50"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайла1Контрагент" id="51">
+													<DataPath>Объект.СодержимоеExcelФайла.Контрагент</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайла1КонтрагентКонтекстноеМеню" id="52"/>
+													<ExtendedTooltip name="СодержимоеExcelФайла1КонтрагентРасширеннаяПодсказка" id="53"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайла1Организация" id="54">
+													<DataPath>Объект.СодержимоеExcelФайла.Организация</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайла1ОрганизацияКонтекстноеМеню" id="55"/>
+													<ExtendedTooltip name="СодержимоеExcelФайла1ОрганизацияРасширеннаяПодсказка" id="56"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайла1Склад" id="109">
+													<DataPath>Объект.СодержимоеExcelФайла.Склад</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайла1СкладКонтекстноеМеню" id="110"/>
+													<ExtendedTooltip name="СодержимоеExcelФайла1СкладРасширеннаяПодсказка" id="111"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайла1Комментарий" id="57">
+													<DataPath>Объект.СодержимоеExcelФайла.Комментарий</DataPath>
+													<Visible>false</Visible>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайла1КомментарийКонтекстноеМеню" id="58"/>
+													<ExtendedTooltip name="СодержимоеExcelФайла1КомментарийРасширеннаяПодсказка" id="59"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайла1ДоговорКонтрагента" id="60">
+													<DataPath>Объект.СодержимоеExcelФайла.ДоговорКонтрагента</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайла1ДоговорКонтрагентаКонтекстноеМеню" id="61"/>
+													<ExtendedTooltip name="СодержимоеExcelФайла1ДоговорКонтрагентаРасширеннаяПодсказка" id="62"/>
+													<Events>
+														<Event name="StartChoice">СодержимоеExcelФайла1ДоговорКонтрагентаНачалоВыбора</Event>
+													</Events>
+												</InputField>
+												<InputField name="СодержимоеExcelФайла1ТоварНоменклатура" id="63">
+													<DataPath>Объект.СодержимоеExcelФайла.ТоварНоменклатура</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайла1ТоварНоменклатураКонтекстноеМеню" id="64"/>
+													<ExtendedTooltip name="СодержимоеExcelФайла1ТоварНоменклатураРасширеннаяПодсказка" id="65"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайла1ТоварКоличество" id="66">
+													<DataPath>Объект.СодержимоеExcelФайла.ТоварКоличество</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайла1ТоварКоличествоКонтекстноеМеню" id="67"/>
+													<ExtendedTooltip name="СодержимоеExcelФайла1ТоварКоличествоРасширеннаяПодсказка" id="68"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайла1ТоварЦена" id="69">
+													<DataPath>Объект.СодержимоеExcelФайла.ТоварЦена</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайла1ТоварЦенаКонтекстноеМеню" id="70"/>
+													<ExtendedTooltip name="СодержимоеExcelФайла1ТоварЦенаРасширеннаяПодсказка" id="71"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайла1ТоварСумма" id="72">
+													<DataPath>Объект.СодержимоеExcelФайла.ТоварСумма</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайла1ТоварСуммаКонтекстноеМеню" id="73"/>
+													<ExtendedTooltip name="СодержимоеExcelФайла1ТоварСуммаРасширеннаяПодсказка" id="74"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайла1ТоварНДС" id="75">
+													<DataPath>Объект.СодержимоеExcelФайла.ТоварНДС</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайла1ТоварНДСКонтекстноеМеню" id="76"/>
+													<ExtendedTooltip name="СодержимоеExcelФайла1ТоварНДСРасширеннаяПодсказка" id="77"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайла1ТоварСуммаНДС" id="78">
+													<DataPath>Объект.СодержимоеExcelФайла.ТоварСуммаНДС</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайла1ТоварСуммаНДСКонтекстноеМеню" id="79"/>
+													<ExtendedTooltip name="СодержимоеExcelФайла1ТоварСуммаНДСРасширеннаяПодсказка" id="80"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайла1Услуга" id="92">
+													<DataPath>Объект.СодержимоеExcelФайла.ТоварУслуга</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайла1УслугаКонтекстноеМеню" id="93"/>
+													<ExtendedTooltip name="СодержимоеExcelФайла1УслугаРасширеннаяПодсказка" id="94"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="Группа11" id="121">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Платежные поручения входящие / исходящие</v8:content>
+										</v8:item>
+									</Title>
+									<Group>HorizontalIfPossible</Group>
+									<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="122"/>
+									<ChildItems>
+										<Table name="СодержимоеExcelФайлаДоп" id="123">
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Объект.СодержимоеExcelФайлаДоп</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="СодержимоеExcelФайлаДопКонтекстноеМеню" id="124"/>
+											<AutoCommandBar name="СодержимоеExcelФайлаДопКоманднаяПанель" id="125"/>
+											<ExtendedTooltip name="СодержимоеExcelФайлаДопРасширеннаяПодсказка" id="126"/>
+											<SearchStringAddition name="СодержимоеExcelФайлаДопСтрокаПоиска" id="127">
+												<AdditionSource>
+													<Item>СодержимоеExcelФайлаДоп</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="СодержимоеExcelФайлаДопСтрокаПоискаКонтекстноеМеню" id="128"/>
+												<ExtendedTooltip name="СодержимоеExcelФайлаДопСтрокаПоискаРасширеннаяПодсказка" id="129"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="СодержимоеExcelФайлаДопСостояниеПросмотра" id="130">
+												<AdditionSource>
+													<Item>СодержимоеExcelФайлаДоп</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="СодержимоеExcelФайлаДопСостояниеПросмотраКонтекстноеМеню" id="131"/>
+												<ExtendedTooltip name="СодержимоеExcelФайлаДопСостояниеПросмотраРасширеннаяПодсказка" id="132"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="СодержимоеExcelФайлаДопУправлениеПоиском" id="133">
+												<AdditionSource>
+													<Item>СодержимоеExcelФайлаДоп</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="СодержимоеExcelФайлаДопУправлениеПоискомКонтекстноеМеню" id="134"/>
+												<ExtendedTooltip name="СодержимоеExcelФайлаДопУправлениеПоискомРасширеннаяПодсказка" id="135"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<LabelField name="СодержимоеExcelФайлаДопНомерСтроки" id="136">
+													<DataPath>Объект.СодержимоеExcelФайлаДоп.LineNumber</DataPath>
+													<Visible>false</Visible>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайлаДопНомерСтрокиКонтекстноеМеню" id="137"/>
+													<ExtendedTooltip name="СодержимоеExcelФайлаДопНомерСтрокиРасширеннаяПодсказка" id="138"/>
+												</LabelField>
+												<InputField name="СодержимоеExcelФайлаДопДата" id="139">
+													<DataPath>Объект.СодержимоеExcelФайлаДоп.Дата</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайлаДопДатаКонтекстноеМеню" id="140"/>
+													<ExtendedTooltip name="СодержимоеExcelФайлаДопДатаРасширеннаяПодсказка" id="141"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайлаДопВидОперации" id="142">
+													<DataPath>Объект.СодержимоеExcelФайлаДоп.ВидОперации</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайлаДопВидОперацииКонтекстноеМеню" id="143"/>
+													<ExtendedTooltip name="СодержимоеExcelФайлаДопВидОперацииРасширеннаяПодсказка" id="144"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайлаДопСуммаДокумента" id="145">
+													<DataPath>Объект.СодержимоеExcelФайлаДоп.СуммаДокумента</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайлаДопСуммаДокументаКонтекстноеМеню" id="146"/>
+													<ExtendedTooltip name="СодержимоеExcelФайлаДопСуммаДокументаРасширеннаяПодсказка" id="147"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайлаДопКонтрагент" id="148">
+													<DataPath>Объект.СодержимоеExcelФайлаДоп.Контрагент</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайлаДопКонтрагентКонтекстноеМеню" id="149"/>
+													<ExtendedTooltip name="СодержимоеExcelФайлаДопКонтрагентРасширеннаяПодсказка" id="150"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайлаДопСчетКонтрагента" id="166">
+													<DataPath>Объект.СодержимоеExcelФайлаДоп.СчетКонтрагента</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайлаДопСчетКонтрагентаКонтекстноеМеню" id="167"/>
+													<ExtendedTooltip name="СодержимоеExcelФайлаДопСчетКонтрагентаРасширеннаяПодсказка" id="168"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайлаДопОрганизация" id="151">
+													<DataPath>Объект.СодержимоеExcelФайлаДоп.Организация</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайлаДопОрганизацияКонтекстноеМеню" id="152"/>
+													<ExtendedTooltip name="СодержимоеExcelФайлаДопОрганизацияРасширеннаяПодсказка" id="153"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайлаДопСчетОрганизации" id="163">
+													<DataPath>Объект.СодержимоеExcelФайлаДоп.СчетОрганизации</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<DropListButton>false</DropListButton>
+													<ChoiceButton>true</ChoiceButton>
+													<ContextMenu name="СодержимоеExcelФайлаДопСчетОрганизацииКонтекстноеМеню" id="164"/>
+													<ExtendedTooltip name="СодержимоеExcelФайлаДопСчетОрганизацииРасширеннаяПодсказка" id="165"/>
+													<Events>
+														<Event name="StartChoice">СодержимоеExcelФайлаДопСчетОрганизацииНачалоВыбора</Event>
+													</Events>
+												</InputField>
+												<InputField name="СодержимоеExcelФайлаДопДоговорКонтрагента" id="154">
+													<DataPath>Объект.СодержимоеExcelФайлаДоп.ДоговорКонтрагента</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайлаДопДоговорКонтрагентаКонтекстноеМеню" id="155"/>
+													<ExtendedTooltip name="СодержимоеExcelФайлаДопДоговорКонтрагентаРасширеннаяПодсказка" id="156"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайлаДопКомментарий" id="157">
+													<DataPath>Объект.СодержимоеExcelФайлаДоп.Комментарий</DataPath>
+													<Visible>false</Visible>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайлаДопКомментарийКонтекстноеМеню" id="158"/>
+													<ExtendedTooltip name="СодержимоеExcelФайлаДопКомментарийРасширеннаяПодсказка" id="159"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайлаДопНазначениеПлатежа" id="160">
+													<DataPath>Объект.СодержимоеExcelФайлаДоп.НазначениеПлатежа</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайлаДопНазначениеПлатежаКонтекстноеМеню" id="161"/>
+													<ExtendedTooltip name="СодержимоеExcelФайлаДопНазначениеПлатежаРасширеннаяПодсказка" id="162"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+						<UsualGroup name="Группа2" id="84">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="85"/>
+							<ChildItems>
+								<CommandBar name="Группа1" id="11">
+									<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="12"/>
+									<ChildItems>
+										<Button name="ЗагрузитьДанныеИзExcel" id="7">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ЗагрузитьДанныеИзExcel</CommandName>
+											<ExtendedTooltip name="ЗагрузитьДанныеИзExcelРасширеннаяПодсказка" id="8"/>
+										</Button>
+										<Button name="СоздатьДокументыНаОсновеТЗ" id="9">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.СоздатьДокументыНаОсновеТЧ</CommandName>
+											<ExtendedTooltip name="СоздатьДокументыНаОсновеТЗРасширеннаяПодсказка" id="10"/>
+										</Button>
+									</ChildItems>
+								</CommandBar>
+								<InputField name="КоличествоСтрокТЗ" id="81">
+									<DataPath>Объект.КоличествоСтрокТЗ</DataPath>
+									<Enabled>false</Enabled>
+									<ContextMenu name="КоличествоСтрокТЗКонтекстноеМеню" id="82"/>
+									<ExtendedTooltip name="КоличествоСтрокТЗРасширеннаяПодсказка" id="83"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Группа14" id="173">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Модифицировать документы (для разработчика)</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа14РасширеннаяПодсказка" id="174"/>
+					<ChildItems>
+						<UsualGroup name="Группа15" id="175">
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа15РасширеннаяПодсказка" id="176"/>
+							<ChildItems>
+								<InputField name="ТипДокументаДляРазработчика" id="229">
+									<DataPath>Объект.ТипДокументаДляРазработчика</DataPath>
+									<ContextMenu name="ТипДокументаДляРазработчикаКонтекстноеМеню" id="230"/>
+									<ExtendedTooltip name="ТипДокументаДляРазработчикаРасширеннаяПодсказка" id="231"/>
+								</InputField>
+								<InputField name="ОрганизацияДляРазработчика" id="177">
+									<DataPath>Объект.ОрганизацияДляРазработчика</DataPath>
+									<ContextMenu name="ОрганизацияДляРазработчикаКонтекстноеМеню" id="178"/>
+									<ExtendedTooltip name="ОрганизацияДляРазработчикаРасширеннаяПодсказка" id="179"/>
+								</InputField>
+								<InputField name="СкладДляРазработчика" id="180">
+									<DataPath>Объект.СкладДляРазработчика</DataPath>
+									<ContextMenu name="СкладДляРазработчикаКонтекстноеМеню" id="181"/>
+									<ExtendedTooltip name="СкладДляРазработчикаРасширеннаяПодсказка" id="182"/>
+								</InputField>
+								<UsualGroup name="Группа18" id="242">
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа18РасширеннаяПодсказка" id="243"/>
+									<ChildItems>
+										<CheckBoxField name="ПоменятьСкладДляРазработчика" id="244">
+											<DataPath>Объект.ПоменятьСкладДляРазработчика</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПоменятьСкладДляРазработчикаКонтекстноеМеню" id="245"/>
+											<ExtendedTooltip name="ПоменятьСкладДляРазработчикаРасширеннаяПодсказка" id="246"/>
+										</CheckBoxField>
+										<InputField name="ДругойСкладДляРазработчика" id="239">
+											<DataPath>Объект.ДругойСкладДляРазработчика</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Поменять на</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДругойСкладДляРазработчикаКонтекстноеМеню" id="240"/>
+											<ExtendedTooltip name="ДругойСкладДляРазработчикаРасширеннаяПодсказка" id="241"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа16" id="189">
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа16РасширеннаяПодсказка" id="190"/>
+									<ChildItems>
+										<InputField name="ДатаНачалоДляРазработчика" id="183">
+											<DataPath>Объект.ДатаНачалоДляРазработчика</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дата начало</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДатаНачалоДляРазработчикаКонтекстноеМеню" id="184"/>
+											<ExtendedTooltip name="ДатаНачалоДляРазработчикаРасширеннаяПодсказка" id="185"/>
+										</InputField>
+										<InputField name="ДатаКонецДляРазработчика" id="186">
+											<DataPath>Объект.ДатаКонецДляРазработчика</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дата конец</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДатаКонецДляРазработчикаКонтекстноеМеню" id="187"/>
+											<ExtendedTooltip name="ДатаКонецДляРазработчикаРасширеннаяПодсказка" id="188"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ДляРазработчика" id="191">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ДляРазработчика</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ДляРазработчикаКонтекстноеМеню" id="192"/>
+							<AutoCommandBar name="ДляРазработчикаКоманднаяПанель" id="193">
+								<ChildItems>
+									<Button name="ДляРазработчикаВыбратьВсе" id="225">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ВыбратьВсе</CommandName>
+										<ExtendedTooltip name="ДляРазработчикаВыбратьВсеРасширеннаяПодсказка" id="226"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДляРазработчикаРасширеннаяПодсказка" id="194"/>
+							<SearchStringAddition name="ДляРазработчикаСтрокаПоиска" id="195">
+								<AdditionSource>
+									<Item>ДляРазработчика</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДляРазработчикаСтрокаПоискаКонтекстноеМеню" id="196"/>
+								<ExtendedTooltip name="ДляРазработчикаСтрокаПоискаРасширеннаяПодсказка" id="197"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДляРазработчикаСостояниеПросмотра" id="198">
+								<AdditionSource>
+									<Item>ДляРазработчика</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДляРазработчикаСостояниеПросмотраКонтекстноеМеню" id="199"/>
+								<ExtendedTooltip name="ДляРазработчикаСостояниеПросмотраРасширеннаяПодсказка" id="200"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДляРазработчикаУправлениеПоиском" id="201">
+								<AdditionSource>
+									<Item>ДляРазработчика</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДляРазработчикаУправлениеПоискомКонтекстноеМеню" id="202"/>
+								<ExtendedTooltip name="ДляРазработчикаУправлениеПоискомРасширеннаяПодсказка" id="203"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<CheckBoxField name="ДляРазработчикаМодифицировать" id="222">
+									<DataPath>Объект.ДляРазработчика.Модифицировать</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДляРазработчикаМодифицироватьКонтекстноеМеню" id="223"/>
+									<ExtendedTooltip name="ДляРазработчикаМодифицироватьРасширеннаяПодсказка" id="224"/>
+								</CheckBoxField>
+								<InputField name="ДляРазработчикаСсылка" id="236">
+									<DataPath>Объект.ДляРазработчика.Ссылка</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДляРазработчикаСсылкаКонтекстноеМеню" id="237"/>
+									<ExtendedTooltip name="ДляРазработчикаСсылкаРасширеннаяПодсказка" id="238"/>
+								</InputField>
+								<InputField name="ДляРазработчикаДата" id="207">
+									<DataPath>Объект.ДляРазработчика.Дата</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДляРазработчикаДатаКонтекстноеМеню" id="208"/>
+									<ExtendedTooltip name="ДляРазработчикаДатаРасширеннаяПодсказка" id="209"/>
+								</InputField>
+								<InputField name="ДляРазработчикаСумма" id="210">
+									<DataPath>Объект.ДляРазработчика.Сумма</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДляРазработчикаСуммаКонтекстноеМеню" id="211"/>
+									<ExtendedTooltip name="ДляРазработчикаСуммаРасширеннаяПодсказка" id="212"/>
+								</InputField>
+								<InputField name="ДляРазработчикаКонтрагент" id="213">
+									<DataPath>Объект.ДляРазработчика.Контрагент</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДляРазработчикаКонтрагентКонтекстноеМеню" id="214"/>
+									<ExtendedTooltip name="ДляРазработчикаКонтрагентРасширеннаяПодсказка" id="215"/>
+								</InputField>
+								<InputField name="ДляРазработчикаОрганизация" id="216">
+									<DataPath>Объект.ДляРазработчика.Организация</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДляРазработчикаОрганизацияКонтекстноеМеню" id="217"/>
+									<ExtendedTooltip name="ДляРазработчикаОрганизацияРасширеннаяПодсказка" id="218"/>
+								</InputField>
+								<InputField name="ДляРазработчикаСклад" id="219">
+									<DataPath>Объект.ДляРазработчика.Склад</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДляРазработчикаСкладКонтекстноеМеню" id="220"/>
+									<ExtendedTooltip name="ДляРазработчикаСкладРасширеннаяПодсказка" id="221"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<CommandBar name="Группа17" id="234">
+							<ExtendedTooltip name="Группа17РасширеннаяПодсказка" id="235"/>
+							<ChildItems>
+								<Button name="НайтиДокументыДляРазработчика" id="232">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.НайтиДокументыДляРазработчика</CommandName>
+									<ExtendedTooltip name="НайтиДокументыДляРазработчикаРасширеннаяПодсказка" id="233"/>
+								</Button>
+								<Button name="МодифицироватьВыбранные" id="227">
+									<Type>CommandBarButton</Type>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<CommandName>Form.Command.МодифицироватьВыбранные</CommandName>
+									<ExtendedTooltip name="МодифицироватьВыбранныеРасширеннаяПодсказка" id="228"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<Table name="СодержимоеExcelФайла" id="13">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.СодержимоеExcelФайла</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СодержимоеExcelФайлаКонтекстноеМеню" id="14"/>
+			<AutoCommandBar name="СодержимоеExcelФайлаКоманднаяПанель" id="15"/>
+			<ExtendedTooltip name="СодержимоеExcelФайлаРасширеннаяПодсказка" id="16"/>
+			<SearchStringAddition name="СодержимоеExcelФайлаСтрокаПоиска" id="17">
+				<AdditionSource>
+					<Item>СодержимоеExcelФайла</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СодержимоеExcelФайлаСтрокаПоискаКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="СодержимоеExcelФайлаСтрокаПоискаРасширеннаяПодсказка" id="19"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СодержимоеExcelФайлаСостояниеПросмотра" id="20">
+				<AdditionSource>
+					<Item>СодержимоеExcelФайла</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СодержимоеExcelФайлаСостояниеПросмотраКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="СодержимоеExcelФайлаСостояниеПросмотраРасширеннаяПодсказка" id="22"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СодержимоеExcelФайлаУправлениеПоиском" id="23">
+				<AdditionSource>
+					<Item>СодержимоеExcelФайла</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СодержимоеExcelФайлаУправлениеПоискомКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="СодержимоеExcelФайлаУправлениеПоискомРасширеннаяПодсказка" id="25"/>
+			</SearchControlAddition>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ЗагрузкаДокументовИзExcel</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПутьExcel" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь excel</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СодержимоеExcelФайла1ТоварНоменклатура</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайла.Дата</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайла.ТоварНоменклатура</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFDEDE</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СодержимоеExcelФайла1ТоварКоличество</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайла.Дата</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайла.ТоварКоличество</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFDEDE</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СодержимоеExcelФайла1ТоварЦена</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайла.Дата</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайла.ТоварЦена</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFDEDE</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СодержимоеExcelФайла1ТоварСумма</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайла.Дата</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайла.ТоварСумма</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFDEDE</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СодержимоеExcelФайла1ДоговорКонтрагента</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайла.Дата</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайла.ДоговорКонтрагента</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайла.Организация</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайла.ДоговорМеждуОрганизациями</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFDEDE</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СодержимоеExcelФайла1Контрагент</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайла.Дата</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайла.Контрагент</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайла.Организация</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFDEDE</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СодержимоеExcelФайла1Склад</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайла.Дата</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайла.Склад</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайла.Организация</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFDEDE</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СодержимоеExcelФайла1ДоговорМеждуОрганизациями</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайла.Дата</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайла.ДоговорКонтрагента</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайла.Организация</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайла.ДоговорМеждуОрганизациями</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFDEDE</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СодержимоеExcelФайлаДопКонтрагент</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайлаДоп.Контрагент</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFDEDE</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СодержимоеExcelФайлаДопДоговорКонтрагента</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайлаДоп.ДоговорКонтрагента</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СодержимоеExcelФайлаДоп.ВидОперации</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">Оплата поставщику</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFDEDE</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьДанныеИзExcel" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные из excel</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные из excel</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьДанныеИзExcel</Action>
+		</Command>
+		<Command name="СоздатьДокументыНаОсновеТЧ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать документы на основе ТЧ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать документы на основе ТЧ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьДокументыНаОсновеТЧ</Action>
+			<AssociatedTableElementId xsi:type="xs:string">СодержимоеExcelФайла1</AssociatedTableElementId>
+		</Command>
+		<Command name="ПоказатьExcelФайл" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать excel файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать excel файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьExcelФайл</Action>
+		</Command>
+		<Command name="СоздатьНеНайденнуюНоменклатуру" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать не найденную номенклатуру</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать не найденную номенклатуру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьНеНайденнуюНоменклатуру</Action>
+		</Command>
+		<Command name="ЗаполнитьТестовымиДанными" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить тестовыми данными</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить тестовыми данными</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьТестовымиДанными</Action>
+		</Command>
+		<Command name="ДозаполнятьНехваткуСкладов" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дозаполнять нехватку складов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дозаполнять нехватку складов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДозаполнятьНехваткуСкладов</Action>
+		</Command>
+		<Command name="ВыбратьВсе" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьВсе</Action>
+		</Command>
+		<Command name="МодифицироватьВыбранные" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Модифицировать выбранные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Модифицировать выбранные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>МодифицироватьВыбранные</Action>
+		</Command>
+		<Command name="НайтиДокументыДляРазработчика" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти документы для разработчика</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти документы для разработчика</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НайтиДокументыДляРазработчика</Action>
+		</Command>
+	</Commands>
+</Form>
