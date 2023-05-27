@@ -436,6 +436,11 @@
 									<ContextMenu name="ТипДокументаДляРазработчикаКонтекстноеМеню" id="230"/>
 									<ExtendedTooltip name="ТипДокументаДляРазработчикаРасширеннаяПодсказка" id="231"/>
 								</InputField>
+								<InputField name="КонтрагентДляРазработчика" id="295">
+									<DataPath>Объект.КонтрагентДляРазработчика</DataPath>
+									<ContextMenu name="КонтрагентДляРазработчикаКонтекстноеМеню" id="296"/>
+									<ExtendedTooltip name="КонтрагентДляРазработчикаРасширеннаяПодсказка" id="297"/>
+								</InputField>
 								<InputField name="ОрганизацияДляРазработчика" id="177">
 									<DataPath>Объект.ОрганизацияДляРазработчика</DataPath>
 									<ContextMenu name="ОрганизацияДляРазработчикаКонтекстноеМеню" id="178"/>
@@ -499,94 +504,207 @@
 								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
-						<Table name="ДляРазработчика" id="191">
-							<AutoInsertNewRow>true</AutoInsertNewRow>
-							<EnableStartDrag>true</EnableStartDrag>
-							<EnableDrag>true</EnableDrag>
-							<DataPath>Объект.ДляРазработчика</DataPath>
-							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="ДляРазработчикаКонтекстноеМеню" id="192"/>
-							<AutoCommandBar name="ДляРазработчикаКоманднаяПанель" id="193">
-								<ChildItems>
-									<Button name="ДляРазработчикаВыбратьВсе" id="225">
-										<Type>CommandBarButton</Type>
-										<CommandName>Form.Command.ВыбратьВсе</CommandName>
-										<ExtendedTooltip name="ДляРазработчикаВыбратьВсеРасширеннаяПодсказка" id="226"/>
-									</Button>
-								</ChildItems>
-							</AutoCommandBar>
-							<ExtendedTooltip name="ДляРазработчикаРасширеннаяПодсказка" id="194"/>
-							<SearchStringAddition name="ДляРазработчикаСтрокаПоиска" id="195">
-								<AdditionSource>
-									<Item>ДляРазработчика</Item>
-									<Type>SearchStringRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ДляРазработчикаСтрокаПоискаКонтекстноеМеню" id="196"/>
-								<ExtendedTooltip name="ДляРазработчикаСтрокаПоискаРасширеннаяПодсказка" id="197"/>
-							</SearchStringAddition>
-							<ViewStatusAddition name="ДляРазработчикаСостояниеПросмотра" id="198">
-								<AdditionSource>
-									<Item>ДляРазработчика</Item>
-									<Type>ViewStatusRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ДляРазработчикаСостояниеПросмотраКонтекстноеМеню" id="199"/>
-								<ExtendedTooltip name="ДляРазработчикаСостояниеПросмотраРасширеннаяПодсказка" id="200"/>
-							</ViewStatusAddition>
-							<SearchControlAddition name="ДляРазработчикаУправлениеПоиском" id="201">
-								<AdditionSource>
-									<Item>ДляРазработчика</Item>
-									<Type>SearchControl</Type>
-								</AdditionSource>
-								<ContextMenu name="ДляРазработчикаУправлениеПоискомКонтекстноеМеню" id="202"/>
-								<ExtendedTooltip name="ДляРазработчикаУправлениеПоискомРасширеннаяПодсказка" id="203"/>
-							</SearchControlAddition>
+						<Pages name="Группа19" id="255">
+							<ExtendedTooltip name="Группа19РасширеннаяПодсказка" id="256"/>
 							<ChildItems>
-								<CheckBoxField name="ДляРазработчикаМодифицировать" id="222">
-									<DataPath>Объект.ДляРазработчика.Модифицировать</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ДляРазработчикаМодифицироватьКонтекстноеМеню" id="223"/>
-									<ExtendedTooltip name="ДляРазработчикаМодифицироватьРасширеннаяПодсказка" id="224"/>
-								</CheckBoxField>
-								<InputField name="ДляРазработчикаСсылка" id="236">
-									<DataPath>Объект.ДляРазработчика.Ссылка</DataPath>
-									<Visible>false</Visible>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ДляРазработчикаСсылкаКонтекстноеМеню" id="237"/>
-									<ExtendedTooltip name="ДляРазработчикаСсылкаРасширеннаяПодсказка" id="238"/>
-								</InputField>
-								<InputField name="ДляРазработчикаДата" id="207">
-									<DataPath>Объект.ДляРазработчика.Дата</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ДляРазработчикаДатаКонтекстноеМеню" id="208"/>
-									<ExtendedTooltip name="ДляРазработчикаДатаРасширеннаяПодсказка" id="209"/>
-								</InputField>
-								<InputField name="ДляРазработчикаСумма" id="210">
-									<DataPath>Объект.ДляРазработчика.Сумма</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ДляРазработчикаСуммаКонтекстноеМеню" id="211"/>
-									<ExtendedTooltip name="ДляРазработчикаСуммаРасширеннаяПодсказка" id="212"/>
-								</InputField>
-								<InputField name="ДляРазработчикаКонтрагент" id="213">
-									<DataPath>Объект.ДляРазработчика.Контрагент</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ДляРазработчикаКонтрагентКонтекстноеМеню" id="214"/>
-									<ExtendedTooltip name="ДляРазработчикаКонтрагентРасширеннаяПодсказка" id="215"/>
-								</InputField>
-								<InputField name="ДляРазработчикаОрганизация" id="216">
-									<DataPath>Объект.ДляРазработчика.Организация</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ДляРазработчикаОрганизацияКонтекстноеМеню" id="217"/>
-									<ExtendedTooltip name="ДляРазработчикаОрганизацияРасширеннаяПодсказка" id="218"/>
-								</InputField>
-								<InputField name="ДляРазработчикаСклад" id="219">
-									<DataPath>Объект.ДляРазработчика.Склад</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ДляРазработчикаСкладКонтекстноеМеню" id="220"/>
-									<ExtendedTooltip name="ДляРазработчикаСкладРасширеннаяПодсказка" id="221"/>
-								</InputField>
+								<Page name="Группа20" id="257">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Приобретение / Реализация товаров и услуг</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="Группа20РасширеннаяПодсказка" id="258"/>
+									<ChildItems>
+										<Table name="ДляРазработчика" id="191">
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Объект.ДляРазработчика</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="ДляРазработчикаКонтекстноеМеню" id="192"/>
+											<AutoCommandBar name="ДляРазработчикаКоманднаяПанель" id="193">
+												<ChildItems>
+													<Button name="ДляРазработчикаВыбратьВсе" id="225">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ВыбратьВсе</CommandName>
+														<ExtendedTooltip name="ДляРазработчикаВыбратьВсеРасширеннаяПодсказка" id="226"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="ДляРазработчикаРасширеннаяПодсказка" id="194"/>
+											<SearchStringAddition name="ДляРазработчикаСтрокаПоиска" id="195">
+												<AdditionSource>
+													<Item>ДляРазработчика</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ДляРазработчикаСтрокаПоискаКонтекстноеМеню" id="196"/>
+												<ExtendedTooltip name="ДляРазработчикаСтрокаПоискаРасширеннаяПодсказка" id="197"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ДляРазработчикаСостояниеПросмотра" id="198">
+												<AdditionSource>
+													<Item>ДляРазработчика</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ДляРазработчикаСостояниеПросмотраКонтекстноеМеню" id="199"/>
+												<ExtendedTooltip name="ДляРазработчикаСостояниеПросмотраРасширеннаяПодсказка" id="200"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ДляРазработчикаУправлениеПоиском" id="201">
+												<AdditionSource>
+													<Item>ДляРазработчика</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ДляРазработчикаУправлениеПоискомКонтекстноеМеню" id="202"/>
+												<ExtendedTooltip name="ДляРазработчикаУправлениеПоискомРасширеннаяПодсказка" id="203"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<CheckBoxField name="ДляРазработчикаМодифицировать" id="222">
+													<DataPath>Объект.ДляРазработчика.Модифицировать</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ДляРазработчикаМодифицироватьКонтекстноеМеню" id="223"/>
+													<ExtendedTooltip name="ДляРазработчикаМодифицироватьРасширеннаяПодсказка" id="224"/>
+												</CheckBoxField>
+												<InputField name="ДляРазработчикаСсылка" id="236">
+													<DataPath>Объект.ДляРазработчика.Ссылка</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ДляРазработчикаСсылкаКонтекстноеМеню" id="237"/>
+													<ExtendedTooltip name="ДляРазработчикаСсылкаРасширеннаяПодсказка" id="238"/>
+												</InputField>
+												<InputField name="ДляРазработчикаДата" id="207">
+													<DataPath>Объект.ДляРазработчика.Дата</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ДляРазработчикаДатаКонтекстноеМеню" id="208"/>
+													<ExtendedTooltip name="ДляРазработчикаДатаРасширеннаяПодсказка" id="209"/>
+												</InputField>
+												<InputField name="ДляРазработчикаСумма" id="210">
+													<DataPath>Объект.ДляРазработчика.Сумма</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ДляРазработчикаСуммаКонтекстноеМеню" id="211"/>
+													<ExtendedTooltip name="ДляРазработчикаСуммаРасширеннаяПодсказка" id="212"/>
+												</InputField>
+												<InputField name="ДляРазработчикаКонтрагент" id="213">
+													<DataPath>Объект.ДляРазработчика.Контрагент</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ДляРазработчикаКонтрагентКонтекстноеМеню" id="214"/>
+													<ExtendedTooltip name="ДляРазработчикаКонтрагентРасширеннаяПодсказка" id="215"/>
+												</InputField>
+												<InputField name="ДляРазработчикаОрганизация" id="216">
+													<DataPath>Объект.ДляРазработчика.Организация</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ДляРазработчикаОрганизацияКонтекстноеМеню" id="217"/>
+													<ExtendedTooltip name="ДляРазработчикаОрганизацияРасширеннаяПодсказка" id="218"/>
+												</InputField>
+												<InputField name="ДляРазработчикаСклад" id="219">
+													<DataPath>Объект.ДляРазработчика.Склад</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ДляРазработчикаСкладКонтекстноеМеню" id="220"/>
+													<ExtendedTooltip name="ДляРазработчикаСкладРасширеннаяПодсказка" id="221"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="Группа21" id="259">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Платежные поручения входящие / исходящие</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="Группа21РасширеннаяПодсказка" id="260"/>
+									<ChildItems>
+										<Table name="ДляРазработчика2" id="261">
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Объект.ДляРазработчика2</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="ДляРазработчика2КонтекстноеМеню" id="262"/>
+											<AutoCommandBar name="ДляРазработчика2КоманднаяПанель" id="263">
+												<ChildItems>
+													<Button name="ДляРазработчика2ВыбратьВсе2" id="298">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ВыбратьВсе2</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Выбрать все</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="ДляРазработчика2ВыбратьВсе2РасширеннаяПодсказка" id="299"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="ДляРазработчика2РасширеннаяПодсказка" id="264"/>
+											<SearchStringAddition name="ДляРазработчика2СтрокаПоиска" id="265">
+												<AdditionSource>
+													<Item>ДляРазработчика2</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ДляРазработчика2СтрокаПоискаКонтекстноеМеню" id="266"/>
+												<ExtendedTooltip name="ДляРазработчика2СтрокаПоискаРасширеннаяПодсказка" id="267"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ДляРазработчика2СостояниеПросмотра" id="268">
+												<AdditionSource>
+													<Item>ДляРазработчика2</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ДляРазработчика2СостояниеПросмотраКонтекстноеМеню" id="269"/>
+												<ExtendedTooltip name="ДляРазработчика2СостояниеПросмотраРасширеннаяПодсказка" id="270"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ДляРазработчика2УправлениеПоиском" id="271">
+												<AdditionSource>
+													<Item>ДляРазработчика2</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ДляРазработчика2УправлениеПоискомКонтекстноеМеню" id="272"/>
+												<ExtendedTooltip name="ДляРазработчика2УправлениеПоискомРасширеннаяПодсказка" id="273"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<CheckBoxField name="ДляРазработчика2Модифицировать" id="277">
+													<DataPath>Объект.ДляРазработчика2.Модифицировать</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ДляРазработчика2МодифицироватьКонтекстноеМеню" id="278"/>
+													<ExtendedTooltip name="ДляРазработчика2МодифицироватьРасширеннаяПодсказка" id="279"/>
+												</CheckBoxField>
+												<InputField name="ДляРазработчика2Ссылка" id="280">
+													<DataPath>Объект.ДляРазработчика2.Ссылка</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ДляРазработчика2СсылкаКонтекстноеМеню" id="281"/>
+													<ExtendedTooltip name="ДляРазработчика2СсылкаРасширеннаяПодсказка" id="282"/>
+												</InputField>
+												<InputField name="ДляРазработчика2Дата" id="283">
+													<DataPath>Объект.ДляРазработчика2.Дата</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ДляРазработчика2ДатаКонтекстноеМеню" id="284"/>
+													<ExtendedTooltip name="ДляРазработчика2ДатаРасширеннаяПодсказка" id="285"/>
+												</InputField>
+												<InputField name="ДляРазработчика2Сумма" id="286">
+													<DataPath>Объект.ДляРазработчика2.Сумма</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ДляРазработчика2СуммаКонтекстноеМеню" id="287"/>
+													<ExtendedTooltip name="ДляРазработчика2СуммаРасширеннаяПодсказка" id="288"/>
+												</InputField>
+												<InputField name="ДляРазработчика2Контрагент" id="289">
+													<DataPath>Объект.ДляРазработчика2.Контрагент</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ДляРазработчика2КонтрагентКонтекстноеМеню" id="290"/>
+													<ExtendedTooltip name="ДляРазработчика2КонтрагентРасширеннаяПодсказка" id="291"/>
+												</InputField>
+												<InputField name="ДляРазработчика2Организация" id="292">
+													<DataPath>Объект.ДляРазработчика2.Организация</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ДляРазработчика2ОрганизацияКонтекстноеМеню" id="293"/>
+													<ExtendedTooltip name="ДляРазработчика2ОрганизацияРасширеннаяПодсказка" id="294"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
 							</ChildItems>
-						</Table>
+						</Pages>
 						<CommandBar name="Группа17" id="234">
 							<ExtendedTooltip name="Группа17РасширеннаяПодсказка" id="235"/>
 							<ChildItems>
@@ -600,6 +718,13 @@
 									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 									<CommandName>Form.Command.МодифицироватьВыбранные</CommandName>
 									<ExtendedTooltip name="МодифицироватьВыбранныеРасширеннаяПодсказка" id="228"/>
+								</Button>
+								<Button name="ПометитьНаУдалениеВыбранные" id="253">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ПометитьНаУдалениеВыбранные</CommandName>
+									<TextColor>style:FormBackColor</TextColor>
+									<BackColor>#FF6666</BackColor>
+									<ExtendedTooltip name="ПометитьНаУдалениеВыбранныеРасширеннаяПодсказка" id="254"/>
 								</Button>
 							</ChildItems>
 						</CommandBar>
@@ -1100,6 +1225,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>НайтиДокументыДляРазработчика</Action>
+		</Command>
+		<Command name="ПометитьНаУдалениеВыбранные" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить на удаление выбранные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить на удаление выбранные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПометитьНаУдалениеВыбранные</Action>
+		</Command>
+		<Command name="ВыбратьВсе2" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все 2</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьВсе2</Action>
 		</Command>
 	</Commands>
 </Form>
