@@ -363,6 +363,19 @@
 													<ContextMenu name="СодержимоеExcelФайлаДопКомментарийКонтекстноеМеню" id="158"/>
 													<ExtendedTooltip name="СодержимоеExcelФайлаДопКомментарийРасширеннаяПодсказка" id="159"/>
 												</InputField>
+												<InputField name="СодержимоеExcelФайлаДопСтавкаНДС" id="247">
+													<DataPath>Объект.СодержимоеExcelФайлаДоп.СтавкаНДС</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайлаДопСтавкаНДСКонтекстноеМеню" id="248"/>
+													<ExtendedTooltip name="СодержимоеExcelФайлаДопСтавкаНДСРасширеннаяПодсказка" id="249"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайлаДопСуммаНДС" id="250">
+													<DataPath>Объект.СодержимоеExcelФайлаДоп.СуммаНДС</DataPath>
+													<Visible>false</Visible>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайлаДопСуммаНДСКонтекстноеМеню" id="251"/>
+													<ExtendedTooltip name="СодержимоеExcelФайлаДопСуммаНДСРасширеннаяПодсказка" id="252"/>
+												</InputField>
 												<InputField name="СодержимоеExcelФайлаДопНазначениеПлатежа" id="160">
 													<DataPath>Объект.СодержимоеExcelФайлаДоп.НазначениеПлатежа</DataPath>
 													<EditMode>EnterOnInput</EditMode>
