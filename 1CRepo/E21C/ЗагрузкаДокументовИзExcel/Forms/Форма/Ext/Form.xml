@@ -127,7 +127,15 @@
 											<DataPath>Объект.СодержимоеExcelФайла</DataPath>
 											<RowFilter xsi:nil="true"/>
 											<ContextMenu name="СодержимоеExcelФайла1КонтекстноеМеню" id="27"/>
-											<AutoCommandBar name="СодержимоеExcelФайла1КоманднаяПанель" id="28"/>
+											<AutoCommandBar name="СодержимоеExcelФайла1КоманднаяПанель" id="28">
+												<ChildItems>
+													<Button name="СодержимоеExcelФайла1ОчиститьТаблицы" id="359">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ОчиститьТаблицы</CommandName>
+														<ExtendedTooltip name="СодержимоеExcelФайла1ОчиститьТаблицыРасширеннаяПодсказка" id="360"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
 											<ExtendedTooltip name="СодержимоеExcelФайла1РасширеннаяПодсказка" id="29"/>
 											<SearchStringAddition name="СодержимоеExcelФайла1СтрокаПоиска" id="30">
 												<AdditionSource>
@@ -269,7 +277,15 @@
 											<DataPath>Объект.СодержимоеExcelФайлаДоп</DataPath>
 											<RowFilter xsi:nil="true"/>
 											<ContextMenu name="СодержимоеExcelФайлаДопКонтекстноеМеню" id="124"/>
-											<AutoCommandBar name="СодержимоеExcelФайлаДопКоманднаяПанель" id="125"/>
+											<AutoCommandBar name="СодержимоеExcelФайлаДопКоманднаяПанель" id="125">
+												<ChildItems>
+													<Button name="СодержимоеExcelФайлаДопОчиститьТаблицы" id="361">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ОчиститьТаблицы</CommandName>
+														<ExtendedTooltip name="СодержимоеExcelФайлаДопОчиститьТаблицыРасширеннаяПодсказка" id="362"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
 											<ExtendedTooltip name="СодержимоеExcelФайлаДопРасширеннаяПодсказка" id="126"/>
 											<SearchStringAddition name="СодержимоеExcelФайлаДопСтрокаПоиска" id="127">
 												<AdditionSource>
@@ -530,6 +546,11 @@
 														<CommandName>Form.Command.ВыбратьВсе</CommandName>
 														<ExtendedTooltip name="ДляРазработчикаВыбратьВсеРасширеннаяПодсказка" id="226"/>
 													</Button>
+													<Button name="ДляРазработчикаПроверитьРеквизитыФормы" id="300">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ПроверитьРеквизитыФормы</CommandName>
+														<ExtendedTooltip name="ДляРазработчикаПроверитьРеквизитыФормыРасширеннаяПодсказка" id="301"/>
+													</Button>
 												</ChildItems>
 											</AutoCommandBar>
 											<ExtendedTooltip name="ДляРазработчикаРасширеннаяПодсказка" id="194"/>
@@ -634,6 +655,11 @@
 														</Title>
 														<ExtendedTooltip name="ДляРазработчика2ВыбратьВсе2РасширеннаяПодсказка" id="299"/>
 													</Button>
+													<Button name="ДляРазработчика2ПроверитьРеквизитыФормы2" id="302">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ПроверитьРеквизитыФормы2</CommandName>
+														<ExtendedTooltip name="ДляРазработчика2ПроверитьРеквизитыФормы2РасширеннаяПодсказка" id="303"/>
+													</Button>
 												</ChildItems>
 											</AutoCommandBar>
 											<ExtendedTooltip name="ДляРазработчика2РасширеннаяПодсказка" id="264"/>
@@ -728,6 +754,162 @@
 								</Button>
 							</ChildItems>
 						</CommandBar>
+						<UsualGroup name="Группа22" id="357">
+							<Representation>None</Representation>
+							<United>false</United>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа22РасширеннаяПодсказка" id="358"/>
+							<ChildItems>
+								<Table name="ДляРазработчикаРеквизитыФормы" id="304">
+									<TitleLocation>Auto</TitleLocation>
+									<ReadOnly>true</ReadOnly>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.ДляРазработчикаРеквизитыФормы</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Реквизиты формы первого в списке документа</v8:content>
+										</v8:item>
+									</Title>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ДляРазработчикаРеквизитыФормыКонтекстноеМеню" id="305"/>
+									<AutoCommandBar name="ДляРазработчикаРеквизитыФормыКоманднаяПанель" id="306">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ДляРазработчикаРеквизитыФормыРасширеннаяПодсказка" id="307"/>
+									<SearchStringAddition name="ДляРазработчикаРеквизитыФормыСтрокаПоиска" id="308">
+										<AdditionSource>
+											<Item>ДляРазработчикаРеквизитыФормы</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ДляРазработчикаРеквизитыФормыСтрокаПоискаКонтекстноеМеню" id="309"/>
+										<ExtendedTooltip name="ДляРазработчикаРеквизитыФормыСтрокаПоискаРасширеннаяПодсказка" id="310"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ДляРазработчикаРеквизитыФормыСостояниеПросмотра" id="311">
+										<AdditionSource>
+											<Item>ДляРазработчикаРеквизитыФормы</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ДляРазработчикаРеквизитыФормыСостояниеПросмотраКонтекстноеМеню" id="312"/>
+										<ExtendedTooltip name="ДляРазработчикаРеквизитыФормыСостояниеПросмотраРасширеннаяПодсказка" id="313"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ДляРазработчикаРеквизитыФормыУправлениеПоиском" id="314">
+										<AdditionSource>
+											<Item>ДляРазработчикаРеквизитыФормы</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ДляРазработчикаРеквизитыФормыУправлениеПоискомКонтекстноеМеню" id="315"/>
+										<ExtendedTooltip name="ДляРазработчикаРеквизитыФормыУправлениеПоискомРасширеннаяПодсказка" id="316"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ДляРазработчикаРеквизитыФормыНомерСтроки" id="317">
+											<DataPath>Объект.ДляРазработчикаРеквизитыФормы.LineNumber</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДляРазработчикаРеквизитыФормыНомерСтрокиКонтекстноеМеню" id="318"/>
+											<ExtendedTooltip name="ДляРазработчикаРеквизитыФормыНомерСтрокиРасширеннаяПодсказка" id="319"/>
+										</LabelField>
+										<InputField name="ДляРазработчикаРеквизитыФормыИмяРеквизита" id="320">
+											<DataPath>Объект.ДляРазработчикаРеквизитыФормы.ИмяРеквизита</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДляРазработчикаРеквизитыФормыИмяРеквизитаКонтекстноеМеню" id="321"/>
+											<ExtendedTooltip name="ДляРазработчикаРеквизитыФормыИмяРеквизитаРасширеннаяПодсказка" id="322"/>
+										</InputField>
+										<InputField name="ДляРазработчикаРеквизитыФормыЗначениеРеквизита" id="323">
+											<DataPath>Объект.ДляРазработчикаРеквизитыФормы.ЗначениеРеквизита</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДляРазработчикаРеквизитыФормыЗначениеРеквизитаКонтекстноеМеню" id="324"/>
+											<ExtendedTooltip name="ДляРазработчикаРеквизитыФормыЗначениеРеквизитаРасширеннаяПодсказка" id="325"/>
+										</InputField>
+										<InputField name="ДляРазработчикаРеквизитыФормыТипРеквизита" id="326">
+											<DataPath>Объект.ДляРазработчикаРеквизитыФормы.ТипРеквизита</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДляРазработчикаРеквизитыФормыТипРеквизитаКонтекстноеМеню" id="327"/>
+											<ExtendedTooltip name="ДляРазработчикаРеквизитыФормыТипРеквизитаРасширеннаяПодсказка" id="328"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<Table name="ДляРазработчикаРеквизитыТЧФормы" id="329">
+									<TitleLocation>Auto</TitleLocation>
+									<ReadOnly>true</ReadOnly>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.ДляРазработчикаРеквизитыТЧФормы</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Реквизиты ТЧ формы первого в списке документа</v8:content>
+										</v8:item>
+									</Title>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ДляРазработчикаРеквизитыТЧФормыКонтекстноеМеню" id="330"/>
+									<AutoCommandBar name="ДляРазработчикаРеквизитыТЧФормыКоманднаяПанель" id="331">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ДляРазработчикаРеквизитыТЧФормыРасширеннаяПодсказка" id="332"/>
+									<SearchStringAddition name="ДляРазработчикаРеквизитыТЧФормыСтрокаПоиска" id="333">
+										<AdditionSource>
+											<Item>ДляРазработчикаРеквизитыТЧФормы</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ДляРазработчикаРеквизитыТЧФормыСтрокаПоискаКонтекстноеМеню" id="334"/>
+										<ExtendedTooltip name="ДляРазработчикаРеквизитыТЧФормыСтрокаПоискаРасширеннаяПодсказка" id="335"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ДляРазработчикаРеквизитыТЧФормыСостояниеПросмотра" id="336">
+										<AdditionSource>
+											<Item>ДляРазработчикаРеквизитыТЧФормы</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ДляРазработчикаРеквизитыТЧФормыСостояниеПросмотраКонтекстноеМеню" id="337"/>
+										<ExtendedTooltip name="ДляРазработчикаРеквизитыТЧФормыСостояниеПросмотраРасширеннаяПодсказка" id="338"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ДляРазработчикаРеквизитыТЧФормыУправлениеПоиском" id="339">
+										<AdditionSource>
+											<Item>ДляРазработчикаРеквизитыТЧФормы</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ДляРазработчикаРеквизитыТЧФормыУправлениеПоискомКонтекстноеМеню" id="340"/>
+										<ExtendedTooltip name="ДляРазработчикаРеквизитыТЧФормыУправлениеПоискомРасширеннаяПодсказка" id="341"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ДляРазработчикаРеквизитыТЧФормыНомерСтроки" id="342">
+											<DataPath>Объект.ДляРазработчикаРеквизитыТЧФормы.LineNumber</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДляРазработчикаРеквизитыТЧФормыНомерСтрокиКонтекстноеМеню" id="343"/>
+											<ExtendedTooltip name="ДляРазработчикаРеквизитыТЧФормыНомерСтрокиРасширеннаяПодсказка" id="344"/>
+										</LabelField>
+										<InputField name="ДляРазработчикаРеквизитыТЧФормыИмяТабличнойЧасти" id="345">
+											<DataPath>Объект.ДляРазработчикаРеквизитыТЧФормы.ИмяТабличнойЧасти</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДляРазработчикаРеквизитыТЧФормыИмяТабличнойЧастиКонтекстноеМеню" id="346"/>
+											<ExtendedTooltip name="ДляРазработчикаРеквизитыТЧФормыИмяТабличнойЧастиРасширеннаяПодсказка" id="347"/>
+										</InputField>
+										<InputField name="ДляРазработчикаРеквизитыТЧФормыИмяРеквизита" id="348">
+											<DataPath>Объект.ДляРазработчикаРеквизитыТЧФормы.ИмяРеквизита</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДляРазработчикаРеквизитыТЧФормыИмяРеквизитаКонтекстноеМеню" id="349"/>
+											<ExtendedTooltip name="ДляРазработчикаРеквизитыТЧФормыИмяРеквизитаРасширеннаяПодсказка" id="350"/>
+										</InputField>
+										<InputField name="ДляРазработчикаРеквизитыТЧФормыЗначениеРеквизита" id="351">
+											<DataPath>Объект.ДляРазработчикаРеквизитыТЧФормы.ЗначениеРеквизита</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДляРазработчикаРеквизитыТЧФормыЗначениеРеквизитаКонтекстноеМеню" id="352"/>
+											<ExtendedTooltip name="ДляРазработчикаРеквизитыТЧФормыЗначениеРеквизитаРасширеннаяПодсказка" id="353"/>
+										</InputField>
+										<InputField name="ДляРазработчикаРеквизитыТЧФормыТипРеквизита" id="354">
+											<DataPath>Объект.ДляРазработчикаРеквизитыТЧФормы.ТипРеквизита</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДляРазработчикаРеквизитыТЧФормыТипРеквизитаКонтекстноеМеню" id="355"/>
+											<ExtendedTooltip name="ДляРазработчикаРеквизитыТЧФормыТипРеквизитаРасширеннаяПодсказка" id="356"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</Page>
 			</ChildItems>
@@ -1255,6 +1437,51 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ВыбратьВсе2</Action>
+		</Command>
+		<Command name="ПроверитьРеквизитыФормы" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить реквизиты формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить реквизиты формы документа (только 1 строка)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьРеквизитыФормы</Action>
+		</Command>
+		<Command name="ПроверитьРеквизитыФормы2" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить реквизиты формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить реквизиты формы документа (только 1 строка)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьРеквизитыФормы</Action>
+		</Command>
+		<Command name="ОчиститьТаблицы" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить таблицы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить таблицы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьТаблицы</Action>
 		</Command>
 	</Commands>
 </Form>
