@@ -402,6 +402,103 @@
 										</Table>
 									</ChildItems>
 								</Page>
+								<Page name="BRUH" id="363">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Взаимозачеты задолженностей</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>BRUH</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="BRUHРасширеннаяПодсказка" id="364"/>
+									<ChildItems>
+										<InputField name="КонтрагентДляОперации" id="365">
+											<DataPath>Объект.КонтрагентДляОперации</DataPath>
+											<ContextMenu name="КонтрагентДляОперацииКонтекстноеМеню" id="366"/>
+											<ExtendedTooltip name="КонтрагентДляОперацииРасширеннаяПодсказка" id="367"/>
+										</InputField>
+										<Table name="СодержимоеExcelФайлаДоп2" id="368">
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Объект.СодержимоеExcelФайлаДоп2</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="СодержимоеExcelФайлаДоп2КонтекстноеМеню" id="369"/>
+											<AutoCommandBar name="СодержимоеExcelФайлаДоп2КоманднаяПанель" id="370">
+												<ChildItems>
+													<Button name="СодержимоеExcelФайлаДоп2ОчиститьТаблицы" id="396">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ОчиститьТаблицы</CommandName>
+														<ExtendedTooltip name="СодержимоеExcelФайлаДоп2ОчиститьТаблицыРасширеннаяПодсказка" id="397"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="СодержимоеExcelФайлаДоп2РасширеннаяПодсказка" id="371"/>
+											<SearchStringAddition name="СодержимоеExcelФайлаДоп2СтрокаПоиска" id="372">
+												<AdditionSource>
+													<Item>СодержимоеExcelФайлаДоп2</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="СодержимоеExcelФайлаДоп2СтрокаПоискаКонтекстноеМеню" id="373"/>
+												<ExtendedTooltip name="СодержимоеExcelФайлаДоп2СтрокаПоискаРасширеннаяПодсказка" id="374"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="СодержимоеExcelФайлаДоп2СостояниеПросмотра" id="375">
+												<AdditionSource>
+													<Item>СодержимоеExcelФайлаДоп2</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="СодержимоеExcelФайлаДоп2СостояниеПросмотраКонтекстноеМеню" id="376"/>
+												<ExtendedTooltip name="СодержимоеExcelФайлаДоп2СостояниеПросмотраРасширеннаяПодсказка" id="377"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="СодержимоеExcelФайлаДоп2УправлениеПоиском" id="378">
+												<AdditionSource>
+													<Item>СодержимоеExcelФайлаДоп2</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="СодержимоеExcelФайлаДоп2УправлениеПоискомКонтекстноеМеню" id="379"/>
+												<ExtendedTooltip name="СодержимоеExcelФайлаДоп2УправлениеПоискомРасширеннаяПодсказка" id="380"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<LabelField name="СодержимоеExcelФайлаДоп2НомерСтроки" id="381">
+													<DataPath>Объект.СодержимоеExcelФайлаДоп2.LineNumber</DataPath>
+													<Visible>false</Visible>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайлаДоп2НомерСтрокиКонтекстноеМеню" id="382"/>
+													<ExtendedTooltip name="СодержимоеExcelФайлаДоп2НомерСтрокиРасширеннаяПодсказка" id="383"/>
+												</LabelField>
+												<InputField name="СодержимоеExcelФайлаДоп2Дата" id="384">
+													<DataPath>Объект.СодержимоеExcelФайлаДоп2.Дата</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайлаДоп2ДатаКонтекстноеМеню" id="385"/>
+													<ExtendedTooltip name="СодержимоеExcelФайлаДоп2ДатаРасширеннаяПодсказка" id="386"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайлаДоп2Организация" id="387">
+													<DataPath>Объект.СодержимоеExcelФайлаДоп2.Организация</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайлаДоп2ОрганизацияКонтекстноеМеню" id="388"/>
+													<ExtendedTooltip name="СодержимоеExcelФайлаДоп2ОрганизацияРасширеннаяПодсказка" id="389"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайлаДоп2СуммаОперации" id="390">
+													<DataPath>Объект.СодержимоеExcelФайлаДоп2.СуммаОперации</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайлаДоп2СуммаОперацииКонтекстноеМеню" id="391"/>
+													<ExtendedTooltip name="СодержимоеExcelФайлаДоп2СуммаОперацииРасширеннаяПодсказка" id="392"/>
+												</InputField>
+												<InputField name="СодержимоеExcelФайлаДоп2Содержание" id="393">
+													<DataPath>Объект.СодержимоеExcelФайлаДоп2.Содержание</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СодержимоеExcelФайлаДоп2СодержаниеКонтекстноеМеню" id="394"/>
+													<ExtendedTooltip name="СодержимоеExcelФайлаДоп2СодержаниеРасширеннаяПодсказка" id="395"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
 							</ChildItems>
 						</Pages>
 						<UsualGroup name="Группа2" id="84">
